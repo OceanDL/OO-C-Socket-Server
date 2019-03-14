@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+    <request>
+        <command>Print</command>
+        <data>
+            <row type="name">Mr. Joe Chase</row>
+            <row type="address">123 Anywhere Lane</row>
+        </data>
+    </request>
