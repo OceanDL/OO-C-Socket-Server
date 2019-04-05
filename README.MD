@@ -50,8 +50,7 @@
 
 
 ## Design:
-	The Sock class was necessary to properly encapsulate the socket functionality while allowing for easy thread handling of the socket objects. Having this easy thread management allows the server to
-handle the waiting client connections in the queue for simultaneous client connections. Tinyxml2 was used to parse and construct the XML messages as it is lightweight solution for the relatively small XML processing requirements. Overall, the design chosen doesn’t have many limitations outside of general abstraction of the direct socket manipulation, but since the socket descriptor can still be accessed, most socket functionality still remains. Currently, the server listening socket limits the queue to 10 waiting connections. However, this queue size could be changed if it was determined that a greater amount of connections could be waiting and resolved in an acceptable time frame.  
+	The Sock class was necessary to properly encapsulate the socket functionality while allowing for easy thread handling of the socket objects. Having this easy thread management allows the server to handle the waiting client connections in the queue for simultaneous client connections. Tinyxml2 was used to parse and construct the XML messages as it is lightweight solution for the relatively small XML processing requirements. Overall, the design chosen doesn’t have many limitations outside of general abstraction of the direct socket manipulation, but since the socket descriptor can still be accessed, most socket functionality still remains. Currently, the server listening socket limits the queue to 10 waiting connections. However, this queue size could be changed if it was determined that a greater amount of connections could be waiting and resolved in an acceptable time frame.  
 	
 
 
